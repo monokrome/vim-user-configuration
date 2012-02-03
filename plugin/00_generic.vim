@@ -28,3 +28,6 @@ setlocal cursorline
 " Don't draw while macros actions are being performed.
 set lazyredraw
 
+" Always show the ruler for information about the current file
+set ruler
+
