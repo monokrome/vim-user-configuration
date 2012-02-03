@@ -2,12 +2,6 @@ This is part of my Vim configuration, which uses Pathogen. If you
 are interested in using this - please install pathogen by following
 the documentation [here](https://github.com/tpope/vim-pathogen).
 
-After installing pathogen, I usually do the following - as I prefer
-to avoid having a .vimrc file completely:
-
-    mkdir -p ~/.vim/plugin
-    echo "call pathogen#infect()" > ~/.vimrc
-
 This module can now be cloned into ~/.vim/bundles and the settings
 inside of it will automatically be applied via pathogen. I prefer
 to manage ~/.vim/bundles through a piece of software callled
