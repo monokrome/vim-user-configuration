@@ -5,7 +5,8 @@ the documentation [here](https://github.com/tpope/vim-pathogen).
 After installing pathogen, I usually do the follow - as I prefer to
 avoid having a .vimrc file completely:
 
-    echo "call pathogen#infect()" > ~/.vim/autoload/pathogen_init.vim
+    mkdir -p ~/.vim/plugin
+    echo "call pathogen#infect()" > ~/.vim/plugin/pathogen_init.vim
 
 This module can now be cloned into ~/.vim/bundles and the settings
 inside of it will automatically be applied via pathogen. I prefer
