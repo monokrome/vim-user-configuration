@@ -13,3 +13,10 @@ set nowrap
 " Show matching brace highlights
 set showmatch
 
+" Highlight the current line
+hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+
+" Show cursorline in the currently active window
+autocmd WinEnter * setlocal curslorline
+autocmd WinLeave * setlocal nocurslorline
+
