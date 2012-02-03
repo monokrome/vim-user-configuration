@@ -13,10 +13,14 @@ set nowrap
 " Show matching brace highlights
 set showmatch
 
-" Highlight the current line
+" Make the cursorline a full line highlight
 hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 
 " Show cursorline in the currently active window
-autocmd WinEnter * setlocal curslorline
-autocmd WinLeave * setlocal nocurslorline
+" TODO: Fix this for tabs
+autocmd WinEnter * setlocal cursorline
+autocmd WinLeave * setlocal nocursorline
+
+setlocal cursorline
 
