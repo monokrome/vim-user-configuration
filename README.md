@@ -2,8 +2,8 @@ This is part of my Vim configuration, which uses Pathogen. If you
 are interested in using this - please install pathogen by following
 the documentation [here](https://github.com/tpope/vim-pathogen).
 
-After installing pathogen, I usually do the follow - as I prefer to
-avoid having a .vimrc file completely:
+After installing pathogen, I usually do the following - as I prefer
+to avoid having a .vimrc file completely:
 
     mkdir -p ~/.vim/plugin
     echo "call pathogen#infect()" > ~/.vimrc
