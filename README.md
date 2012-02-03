@@ -14,3 +14,6 @@ to manage ~/.vim/bundles through a piece of software callled
 like submodules. The difference is that it doesn't freeze the
 modules at a specific version.
 
+If you are interested in seeing an example of how this works, here
+are [my vim bundles.](https://github.com/monokrome/vim-bundles).
+
