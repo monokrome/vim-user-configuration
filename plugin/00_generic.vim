@@ -22,5 +22,6 @@ hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=whi
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
 
+" This seems to fix WinEnter not occuring when a new Vim instance is created.
 setlocal cursorline
 
