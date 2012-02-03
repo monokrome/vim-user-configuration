@@ -25,3 +25,6 @@ autocmd WinLeave * setlocal nocursorline
 " This seems to fix WinEnter not occuring when a new Vim instance is created.
 setlocal cursorline
 
+" Don't draw while macros actions are being performed.
+set lazyredraw
+
