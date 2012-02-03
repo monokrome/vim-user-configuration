@@ -13,6 +13,3 @@ set nowrap
 " Show matching brace highlights
 set showmatch
 
-" Display a line showing where the cursor is
-set cursorline
-
