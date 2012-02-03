@@ -1,5 +1,5 @@
 if has("mouse")
-	set mouse=a
-	set mousemodel=popup_setpos
+  set mouse=a
+  set mousemodel=popup_setpos
 endif
 
