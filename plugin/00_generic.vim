@@ -15,7 +15,6 @@ set showmatch
 
 " Make the cursorline a full line highlight
 hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
-hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 
 " Show cursorline in the currently active window
 " TODO: Fix this for tabs
