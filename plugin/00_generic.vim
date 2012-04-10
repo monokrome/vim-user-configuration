@@ -14,15 +14,15 @@ set nowrap
 set showmatch
 
 " Make the cursorline a full line highlight
-hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+" hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 
 " Show cursorline in the currently active window
 " TODO: Fix this for tabs
-autocmd WinEnter * setlocal cursorline
-autocmd WinLeave * setlocal nocursorline
+" autocmd WinEnter * setlocal cursorline
+" autocmd WinLeave * setlocal nocursorline
 
 " This seems to fix WinEnter not occuring when a new Vim instance is created.
-setlocal cursorline
+" setlocal cursorline
 
 " Don't draw while macros actions are being performed.
 set lazyredraw
