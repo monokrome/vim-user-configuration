@@ -34,3 +34,7 @@ set ruler
 set wildmode=longest:full
 set wildmenu
 
+" Case-insensitive searches unless caps are explicitly provided
+set ignorecase
+set smartcase
+
