@@ -10,5 +10,7 @@ let g:netrw_liststyle=3
 set backupdir=~/.vim/backup/,./
 set directory=~/.vim/backup/,./
 
-au VimEnter *  NERDTree
+if 0 == argc()
+      au VimEnter * NERDTree
+end
 
