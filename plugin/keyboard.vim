@@ -14,3 +14,6 @@ nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 map <F7> :make<CR>
 map <S-F7> :make clean<CR>
 
+" Toogle NERDTree with , followed by f
+noremap <leader>f :NERDTreeToggle<CR>
+
