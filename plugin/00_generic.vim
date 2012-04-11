@@ -30,3 +30,7 @@ set lazyredraw
 " Always show the ruler for information about the current file
 set ruler
 
+" Better tab completion
+set wildmode=longest:full
+set wildmenu
+
