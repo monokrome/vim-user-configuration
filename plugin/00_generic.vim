@@ -38,3 +38,5 @@ set wildmenu
 set ignorecase
 set smartcase
 
+" Required to enable omnifunc completion
+filetype plugin indent on
