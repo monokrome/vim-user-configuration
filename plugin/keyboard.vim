@@ -16,4 +16,5 @@ map <S-F7> :make clean<CR>
 
 " Toogle NERDTree with , followed by f
 noremap <leader>f :NERDTreeToggle<CR>
+noremap <leader>F :NERDTree %<CR>
 
