@@ -40,3 +40,4 @@ set smartcase
 
 " Required to enable omnifunc completion
 filetype plugin indent on
+
