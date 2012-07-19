@@ -41,3 +41,6 @@ set smartcase
 " Required to enable omnifunc completion
 filetype plugin indent on
 
+" Add git information to the status line from fugitive
+set statusline+=%{fugitive#statusline()}
+
