@@ -6,10 +6,6 @@ set termencoding=UTF-8
 " Use tree-style directory listings
 let g:netrw_liststyle=3
 
-" Change how vim creates backup files
-set backupdir=~/.vim/backup/,./
-set directory=~/.vim/backup/,./
-
 " Some NERDtree stuff
 let NERDTreeMinimalUI=1
 let NERDTreeHighlightCursorline=1
