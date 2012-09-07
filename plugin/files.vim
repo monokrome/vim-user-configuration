@@ -16,4 +16,5 @@ let NERDTreeMapOpenSplit='s'
 let NERDTreeMapHelp='h'
 let NERDTreeMapUpdir='-'
 let NERDTreeMapUpdirKeepOpen='_'
+let NERDTreeDirArrows=0
 
