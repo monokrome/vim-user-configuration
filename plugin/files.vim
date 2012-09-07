@@ -9,12 +9,10 @@ let g:netrw_liststyle=3
 " Some NERDtree stuff
 let NERDTreeMinimalUI=1
 let NERDTreeHighlightCursorline=1
-let NERDTreeHighlightCursorlineeeMouseMode=2
+let NERDTreeHighlightCursorlineMouseMode=2
 let NERDTreeIgnore=['\.pyc$']
-let NERDTreeMapOpenVSplit='v'
-let NERDTreeMapOpenSplit='s'
-let NERDTreeMapHelp='h'
-let NERDTreeMapUpdir='-'
-let NERDTreeMapUpdirKeepOpen='_'
+let NERDTreeMapOpenVSplit='|'
+let NERDTreeMapOpenSplit='_'
+let NERDTreeMapHelp='?'
 let NERDTreeDirArrows=1
 
