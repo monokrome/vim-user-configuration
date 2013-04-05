@@ -2,6 +2,7 @@
 set enc=UTF-8
 set fenc=UTF-8
 set termencoding=UTF-8
+set foldmethod=syntax
 
 " Use tree-style directory listings
 let g:netrw_liststyle=3

@@ -44,6 +44,9 @@ filetype plugin indent on
 " Add git information to the status line from fugitive
 set statusline+=%{fugitive#statusline()}
 
+" Defualt to not have any folds
+set foldlevelstart=99
+
 " Powerline
 let g:Powerline_symbols = 'fancy'
 
