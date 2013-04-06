@@ -53,3 +53,6 @@ let g:Powerline_symbols = 'fancy'
 " Highlight the results from last search
 set hls
 
+" Set comma to the leader key
+let mapleader=','
+

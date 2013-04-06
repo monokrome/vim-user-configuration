@@ -1,6 +1,3 @@
-" Set comma to the leader key
-let mapleader=','
-
 " Fix backspace on Windows machines.
 set backspace=2
 
