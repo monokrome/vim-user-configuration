@@ -17,3 +17,11 @@ let NERDTreeMapOpenSplit='_'
 let NERDTreeMapHelp='?'
 let NERDTreeDirArrows=1
 
+let g:gundo_width = 40
+let g:gundo_preview_height = 40
+let g:gundo_preview_bottom = 1
+let g:gundo_right = 1
+let g:gundo_close_on_revert = 1
+
+noremap <leader>g :GundoToggle<CR>
+
