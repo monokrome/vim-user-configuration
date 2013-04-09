@@ -1,4 +1,4 @@
-" Disable Vi compatibility features
+
 set nocompatible
 
 " Use tabs by default, instead of separate windows.
@@ -57,5 +57,5 @@ set hls
 let mapleader=','
 
 " Put undo files in tmp directory
-set undodir^=~/.vim/tmp/undo/
+set undodir^=~/.vim/tmp/undo//
 
