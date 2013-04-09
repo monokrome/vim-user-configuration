@@ -7,3 +7,6 @@ let g:ctrlp_match_window_bottom = 0
 let g:ctrlp_max_height = 20
 let g:ctrlp_clear_cache_on_exit = 0
 
+" Show tagbar of current symbols with <leader>s
+noremap <leader>t :TagbarToggle<CR>
+
