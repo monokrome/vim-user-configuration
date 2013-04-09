@@ -2,3 +2,6 @@
 nmap j gj
 nmap k gk
 
+" Show ctrl-p at the top of the screen
+let g:ctrlp_match_window_bottom = 0
+
