@@ -4,4 +4,5 @@ nmap k gk
 
 " Show ctrl-p at the top of the screen
 let g:ctrlp_match_window_bottom = 0
+let g:ctrlp_max_height = 20
 
