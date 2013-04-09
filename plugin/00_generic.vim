@@ -60,3 +60,6 @@ let mapleader=','
 " Put undo files in tmp directory
 set undodir^=~/.vim/tmp/undo//
 
+" Update bundles!
+noremap <leader>b :BundleInstall!<CR>
+
