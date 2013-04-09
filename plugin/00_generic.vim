@@ -1,4 +1,3 @@
-
 set nocompatible
 
 " Use tabs by default, instead of separate windows.
