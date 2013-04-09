@@ -56,3 +56,6 @@ set hls
 " Set comma to the leader key
 let mapleader=','
 
+" Put undo files in tmp directory
+set undodir^=~/.vim/tmp/undo//
+
