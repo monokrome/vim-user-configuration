@@ -63,3 +63,6 @@ set undodir^=~/.vim/tmp/undo//
 " Update bundles!
 noremap <leader>b :BundleInstall!<CR>
 
+" Break to shell with <leader>S
+noremap <leader>S :shell<CR>
+
