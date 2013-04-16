@@ -20,5 +20,8 @@ let g:multi_cursor_quit_key='<Esc>'
 
 " YouCompleteMe navigation
 let g:ycm_register_as_syntastic_checker = 1
+let g:ycm_add_preview_to_completeopt = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
+
 noremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
