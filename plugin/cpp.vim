@@ -2,6 +2,6 @@
 map <F4> :e %:p:s,.h?$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
 
 " Dispatch! :D
-noremap <leader>m :Dispatch
-noremap <leader>M :Dispatch!
+noremap <leader>m :Dispatch<CR>
+noremap <leader>M :Dispatch!<CR>
 
