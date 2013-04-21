@@ -1,14 +1,15 @@
-This is part of my Vim configuration, which uses Pathogen. If you
+This is part of my Vim configuration, which uses Vundle. If you
 are interested in using this - please install pathogen by following
-the documentation [here](https://github.com/tpope/vim-pathogen).
+the documentation [here](https://github.com/gmarik/vundle).
 
-This module can now be cloned into ~/.vim/bundle and the settings
-inside of it will automatically be applied via pathogen. I prefer
-to manage ~/.vim/bundle through a piece of software callled
-[git slave](http://gitslave.sourceforge.net/) - which acts much
-like submodules. The difference is that it doesn't freeze the
-modules at a specific version.
+After installing Vundle, you can just add the following to your
+vimrc in order to get started using my configuration:
+
+    Bundle 'monokrome/vim-user-configuration'
+    
+Inside Vim, run `:BundleInstall` to install it - and then restart
+Vim. You're done.
 
 If you are interested in seeing an example of how this works, here
-are [my vim bundles](https://github.com/monokrome/vim-bundles).
+is [my vimrc](https://raw.github.com/monokrome/vim-config/master/vimrc).
 
