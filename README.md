@@ -11,5 +11,5 @@ Inside Vim, run `:BundleInstall` to install it - and then restart
 Vim. You're done.
 
 If you are interested in seeing an example of how this works, here
-is [my vimrc](https://raw.github.com/monokrome/vim-config/master/vimrc).
+is [my vimrc](https://github.com/monokrome/vim-config/tree/master/vimrc).
 
