@@ -10,7 +10,6 @@ set shortmess+=o
 set nowrap
 set textwidth=79
 
-
 " Show matching brace highlights
 set showmatch
 
