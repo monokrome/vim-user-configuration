@@ -1,6 +1,5 @@
-let b:sessions_root = $HOME . '/.vim/tmp/sessions'
-
 function! UpdateSessionPaths()
+  let b:sessions_root = $HOME . '/.vim/tmp/sessions'
   let b:session_directory = b:sessions_root . getcwd()
   let b:session_filename = b:session_directory . '/Session.vim'
 endfunction 
