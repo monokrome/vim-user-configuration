@@ -10,7 +10,6 @@ function! LoadSession()
 
   if (filereadable(b:session_filename))
     execute 'source ' b:session_filename
-    execute 'Obsess'
   else
     echo 'No session loaded.'
   endif
