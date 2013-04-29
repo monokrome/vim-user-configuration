@@ -8,3 +8,6 @@ noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
 " Access the list of registers a bit more easily
 noremap <leader>r :reg<CR>
 
+" Changed clipboard to use unnamed
+set clipboard=unnamed
+
