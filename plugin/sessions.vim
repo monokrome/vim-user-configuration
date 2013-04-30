@@ -1,5 +1,5 @@
 function! LoadSession()
-  if (argc() > 0)
+  if argc() > 0
     return
   endif
 
@@ -7,14 +7,14 @@ function! LoadSession()
   let b:session_directory = b:sessions_root . getcwd()
   let b:session_filename = b:session_directory . '/Session.vim'
 
-  if (filereadable(b:session_filename))
+  if filereadable(b:session_filename)
     execute 'source ' b:session_filename
   else
-    if !(isdirectory(b:session_directory) && !filereadable(b:session_directory))
+    if !isdirectory(b:session_directory) && !filereadable(b:session_directory)
       call mkdir(b:session_directory, 'p')
     endif
 
-    execute 'Obsession "' . b:session_filename . '"'
+    execute 'Obsession ' b:session_filename
   endif
 endfunction
 
