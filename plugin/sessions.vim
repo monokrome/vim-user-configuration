@@ -1,1 +1,1 @@
-let g:sessions_directory = $HOME . '/.vim/tmp/sessions'
+let g:sessions_root = $HOME . '/.vim/tmp/sessions'
