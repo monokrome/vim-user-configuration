@@ -16,6 +16,9 @@ let g:gundo_close_on_revert = 1
 " Make NERDTree use netrw
 let NERDTreeHijackNetrw=1
 
+" Show line numbers
+set number
+
 noremap <leader>u :GundoToggle<CR>
 
 set wildignore=*/node_modules/*,*/lib/python*,*.pid,*.pyc,*.iml,*.rdb,*.db,*.sqlite,*.sqlite3,*/Session.vim,*.log,*.o
