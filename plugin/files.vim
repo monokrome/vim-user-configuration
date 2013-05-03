@@ -19,6 +19,7 @@ let NERDTreeHijackNetrw=1
 " Show line numbers
 set number
 
+" Map ,u to show the GUndo pane
 noremap <leader>u :GundoToggle<CR>
 
 set wildignore=*/node_modules/*,*/lib/python*,*.pid,*.pyc,*.iml,*.rdb,*.db,*.sqlite,*.sqlite3,*/Session.vim,*.log,*.o
