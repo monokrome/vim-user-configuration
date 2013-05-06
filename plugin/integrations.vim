@@ -10,5 +10,6 @@ noremap <leader>ge :Gedit<CR>
 noremap <leader>gw :Gwrite<CR>
 noremap <leader>gb :Gbrowse<CR>
 noremap <leader>gp :Dispatch git push<CR>
+noremap <leader>gu :Dispatch git pull<CR>
 noremap <leader>gf :Dispatch git fetch<CR>
 
