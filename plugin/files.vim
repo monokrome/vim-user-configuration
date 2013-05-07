@@ -28,3 +28,6 @@ set wildignore=*/node_modules/*,*/lib/python*,*.pid,*.pyc,*.iml,*.rdb,*.db,*.sql
 " Don't use incsearch from vim-sensible
 set noincsearch
 
+" Hide current mode text
+set noshowmode
+
