@@ -25,9 +25,9 @@ noremap <leader>u :GundoToggle<CR>
 " Default filenames that Vim should ignore for file listings and such
 set wildignore=*/node_modules/*,*/lib/python*,*.pid,*.pyc,*.iml,*.rdb,*.db,*.sqlite,*.sqlite3,*/Session.vim,*.log,*.o
 
+" Hide the ugly little tilde after EOF
+highlight NonText ctermfg=black guifg=black
+
 " Don't use incsearch from vim-sensible
 set noincsearch
-
-" Hide current mode text
-set noshowmode
 
