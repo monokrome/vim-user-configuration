@@ -6,6 +6,10 @@ noremap <leader>se :Gedit<CR>
 noremap <leader>sw :Gwrite<CR>
 noremap <leader>sb :Gbrowse<CR>
 noremap <leader>sd :Gdiff<CR>
+noremap <leader>sg :GitGutterToggle<CR>
+noremap <leader>sG :GitGutterLineHighlightsToggle<CR>
+noremap <leader>sh :GitGutterNextHunk<CR>
+noremap <leader>sH :GitGutterNextHunk<CR>
 
 " Dispatch! :D
 noremap <leader>m :Dispatch<CR>
