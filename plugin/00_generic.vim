@@ -63,6 +63,3 @@ noremap <leader>B :BundleInstall!<CR>
 " Break to shell with <leader>S
 noremap <leader>S :shell<CR>
 
-" Remove the status line
-set laststatus=0
-
