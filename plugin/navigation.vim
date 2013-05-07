@@ -21,3 +21,6 @@ let g:multi_cursor_quit_key='<Esc>'
 " YouCompleteMe navigation
 noremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
+" Relative line numbers
+set rnu
+
