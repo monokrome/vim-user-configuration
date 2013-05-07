@@ -6,6 +6,8 @@ noremap <leader>se :Gedit<CR>
 noremap <leader>sw :Gwrite<CR>
 noremap <leader>sb :Gbrowse<CR>
 noremap <leader>sd :Gdiff<CR>
+
+" Vim gitgutter
 noremap <leader>sg :GitGutterToggle<CR>
 noremap <leader>sG :GitGutterLineHighlightsToggle<CR>
 noremap <leader>sh :GitGutterNextHunk<CR>
