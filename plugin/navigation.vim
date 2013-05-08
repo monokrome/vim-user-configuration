@@ -30,3 +30,19 @@ let g:multi_cursor_quit_key='<Esc>'
 " YouCompleteMe navigation
 noremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
+" Use tabs by default, instead of separate windows.
+tab all
+
+" Show matching brace highlights
+set showmatch
+
+" Always show the ruler for information about the current file
+set ruler
+
+" Better tab completion
+set wildmode=longest:full
+set wildmenu
+
+" Defualt to not have any folds
+set foldlevelstart=99
+

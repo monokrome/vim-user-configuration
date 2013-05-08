@@ -11,3 +11,6 @@ hi SignColumn ctermbg=black guibg=black
 hi LineNr ctermbg=black guibg=black
 hi CursorLineNr ctermbg=black guibg=black
 
+" Powerline
+let g:Powerline_symbols = 'fancy'
+

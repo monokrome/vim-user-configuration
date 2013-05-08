@@ -28,3 +28,22 @@ highlight NonText ctermfg=black guifg=black
 " Don't use incsearch from vim-sensible
 set noincsearch
 
+" Don't wrap text
+set nowrap
+
+" Default expected width of documents
+set textwidth=79
+
+" Case-insensitive searches unless caps are explicitly provided
+set ignorecase
+set smartcase
+
+" Required to enable omnifunc completion
+filetype plugin indent on
+
+" Put undo files in tmp directory
+set undodir^=~/.vim/tmp/undo//
+
+" Prevent Vim from giving me a hard time for opening multiple files.
+set shortmess+=o
+

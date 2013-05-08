@@ -20,3 +20,9 @@ noremap <leader>sp :Dispatch git push<CR>
 noremap <leader>su :Dispatch git pull<CR>
 noremap <leader>sf :Dispatch git fetch<CR>
 
+" Vundle!
+noremap <leader>B :BundleInstall!<CR>
+
+" Break to shell with <leader>S
+noremap <leader>S :shell<CR>
+
