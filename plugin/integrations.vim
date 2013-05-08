@@ -4,7 +4,7 @@ noremap <leader>sc :Gcommit<CR>
 noremap <leader>sb :Gblame<CR>
 noremap <leader>se :Gedit<CR>
 noremap <leader>sw :Gwrite<CR>
-noremap <leader>sb :Gbrowse<CR>
+noremap <leader>sB :Gbrowse<CR>
 noremap <leader>sd :Gdiff<CR>
 
 " Vim gitgutter
