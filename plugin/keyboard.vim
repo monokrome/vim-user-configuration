@@ -8,6 +8,3 @@ nmap t :tabnew<Enter>
 map <F7> :make<CR>
 map <S-F7> :make clean<CR>
 
-" Set comma to the leader key
-let mapleader=','
-
