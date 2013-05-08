@@ -8,7 +8,8 @@ let g:ctrlp_max_height = 20
 let g:ctrlp_clear_cache_on_exit = 0
 
 " Show tagbar of current symbols with <leader>s
-noremap <leader>S :TagbarTogglePause<CR>
+noremap <leader>Ss :TagbarToggle<CR>
+noremap <leader>Sf :TagbarTogglePause<CR>
 
 " Multi-cursor bindings
 let g:multi_cursor_use_default_mapping=0
