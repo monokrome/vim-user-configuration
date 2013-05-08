@@ -16,9 +16,6 @@ let g:gundo_close_on_revert = 1
 " Make NERDTree use netrw
 let NERDTreeHijackNetrw=1
 
-" Show line numbers
-set number
-
 " Map ,u to show the GUndo pane
 noremap <leader>u :GundoToggle<CR>
 
