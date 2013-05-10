@@ -8,6 +8,8 @@ noremap <leader>sB :Gbrowse<CR>
 noremap <leader>sd :Gdiff<CR>
 
 " Vim gitgutter
+let g:gitgutter_enabled = 0
+
 noremap <leader>sg :GitGutterToggle<CR>
 noremap <leader>sG :GitGutterLineHighlightsToggle<CR>
 noremap <leader>sh :GitGutterNextHunk<CR>
