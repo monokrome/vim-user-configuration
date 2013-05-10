@@ -2,6 +2,7 @@ syntax on
 set background=dark
 colorscheme solarized
 
+" Cursor
 hi CursorLine ctermfg=none ctermbg=none cterm=bold
 hi CursorColumn ctermfg=none ctermbg=none cterm=bold
 
