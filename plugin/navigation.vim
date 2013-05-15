@@ -46,3 +46,7 @@ set wildmenu
 " Defualt to not have any folds
 set foldlevelstart=99
 
+" Disable warnings about files having been changed when switching
+" to new ones.
+set hidden
+
