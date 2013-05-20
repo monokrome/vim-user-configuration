@@ -47,5 +47,3 @@ set undodir^=~/.vim/tmp/undo//
 " Prevent Vim from giving me a hard time for opening multiple files.
 set shortmess+=o
 
-" Preserve entire file for undo, allowing undo after rereading it.
-set undoreload
