@@ -5,7 +5,7 @@ set statusline=
 set statusline+=%h%m%r%y\ 
 
 " Add filename to statusline
-set statusline+=%t
+set statusline+=%f
 
 " Everything after this is right-aligned
 set statusline+=%=
