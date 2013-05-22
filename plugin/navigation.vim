@@ -53,3 +53,6 @@ set hidden
 " Disable line numbers (they are enabled by python-mode)
 set nonumber
 
+" Show me the jumplist
+noremap <leader>lj :jumps<CR>
+noremap <leader>lc :changes<CR>
