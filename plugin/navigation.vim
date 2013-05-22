@@ -50,3 +50,6 @@ set foldlevelstart=99
 " to new ones.
 set hidden
 
+" Disable line numbers (they are enabled by python-mode)
+set nonumber
+
