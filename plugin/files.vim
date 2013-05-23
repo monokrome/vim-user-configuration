@@ -47,3 +47,6 @@ set undodir^=~/.vim/tmp/undo//
 " Prevent Vim from giving me a hard time for opening multiple files.
 set shortmess+=o
 
+" Remove all trailing white space when writing files
+autocmd BufWritePre * :%s/\s\+$//e
+
