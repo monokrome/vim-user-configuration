@@ -48,5 +48,5 @@ set undodir^=~/.vim/tmp/undo//
 set shortmess+=o
 
 " Remove all trailing white space when writing files
-autocmd BufWritePre * :%s/[^\\]\s\+$//e
+" autocmd BufWritePre * :%s/[^\\]\s\+$//e
 
