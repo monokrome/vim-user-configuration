@@ -53,3 +53,9 @@ set nonumber
 " Show me the jumplist
 noremap <leader>lj :jumps<CR>
 noremap <leader>lc :changes<CR>
+
+" MacVim / GVim stuff.
+if has('gui_running')
+  noremap <D-,> :e ~/.vimrc<CR>
+endif
+
