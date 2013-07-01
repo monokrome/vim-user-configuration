@@ -27,9 +27,6 @@ let g:multi_cursor_prev_key='<leader>k'
 let g:multi_cursor_skip_key='<leader>x'
 let g:multi_cursor_quit_key='<Esc>'
 
-" YouCompleteMe navigation
-noremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
-
 " Use tabs by default, instead of separate windows.
 tab all
 
