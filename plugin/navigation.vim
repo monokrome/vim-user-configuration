@@ -63,6 +63,9 @@ nno <leader>nf :<C-u>Unite file_rec file_rec/async:! -start-insert<CR>
 " Yank stack
 nnoremap <leader>ny :Unite history/yank<CR>
 
+" A bit like lusty-juggler
+nnoremap <leader>nb :Unite buffer -quick-match<CR>
+
 " Change to recently used directories
 nno <leader>nd :<C-u>Unite directory_mru directory -start-insert -buffer-name=cd -default-action=cd<CR>
 
