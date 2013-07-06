@@ -57,14 +57,14 @@ noremap <leader>lc :changes<CR>
 let g:unite_source_history_yank_enable = 1
 
 " ctrl-p replacement
-nno <leader>nrf :<C-u>Unite file_mru file_rec/async:! -start-insert<CR>
-nno <leader>nf :<C-u>Unite file_rec file_rec/async:! -start-insert<CR>
+nno <leader>nrf :<C-u>Unite file_mru file_rec/async:! -start-insert -auto-preview<CR>
+nno <leader>nf :<C-u>Unite file_rec file_rec/async:! -start-insert -auto-preview<CR>
 
 " Yank stack
 nnoremap <leader>ny :Unite history/yank<CR>
 
 " A bit like lusty-juggler
-nnoremap <leader>nb :Unite buffer -quick-match<CR>
+nnoremap <leader>nb :Unite buffer -quick-match -auto-preview<CR>
 
 " Change to recently used directories
 nno <leader>nd :<C-u>Unite directory_mru directory -start-insert -buffer-name=cd -default-action=cd<CR>
