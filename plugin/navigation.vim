@@ -8,11 +8,11 @@ let g:ctrlp_max_height = 20
 let g:ctrlp_clear_cache_on_exit = 1
 
 let g:ctrlp_user_command = {
-  \ 'types': {
-    \ 1: ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others'],
-    \ 2: ['.hg', 'hg --cwd %s locate -I .'],
-  \ },
-  \ 'fallback': 'find %s -type f'
+\   'types': {
+\     1: ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others'],
+\     2: ['.hg', 'hg --cwd %s locate -I .'],
+\   },
+\   'fallback': 'find %s -type f'
 \ }
 
 " Multi-cursor bindings
