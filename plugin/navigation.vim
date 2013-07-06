@@ -15,10 +15,6 @@ let g:ctrlp_user_command = {
   \ 'fallback': 'find %s -type f'
 \ }
 
-" Show tagbar of current symbols with <leader>s
-noremap <leader>Ss :TagbarToggle<CR>
-noremap <leader>Sf :TagbarTogglePause<CR>
-
 " Multi-cursor bindings
 let g:multi_cursor_use_default_mapping=0
 
@@ -57,8 +53,8 @@ noremap <leader>lc :changes<CR>
 let g:unite_source_history_yank_enable = 1
 
 " ctrl-p replacement
-nno <leader>nrf :<C-u>Unite file_mru file_rec/async:! -start-insert -auto-preview<CR>
-nno <leader>nf :<C-u>Unite file_rec file_rec/async:! -start-insert -auto-preview<CR>
+nno <leader>nrf :Unite file_mru file_rec/async:! -start-insert -auto-preview<CR>
+nno <leader>nf :Unite file_rec file_rec/async:! -start-insert -auto-preview<CR>
 
 " Yank stack
 nnoremap <leader>ny :Unite history/yank<CR>
@@ -67,7 +63,10 @@ nnoremap <leader>ny :Unite history/yank<CR>
 nnoremap <leader>nb :Unite buffer -quick-match -auto-preview<CR>
 
 " Change to recently used directories
-nno <leader>nd :<C-u>Unite directory_mru directory -start-insert -buffer-name=cd -default-action=cd<CR>
+nno <leader>nd :Unite directory_mru directory -start-insert -buffer-name=cd -default-action=cd<CR>
+
+" Tagbar-like tool
+nnoremap <leader>nt :Unite outline<CR>
 
 " MacVim / GVim stuff.
 if has('gui_running')
