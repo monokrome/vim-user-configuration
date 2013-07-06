@@ -53,8 +53,8 @@ noremap <leader>lc :changes<CR>
 let g:unite_source_history_yank_enable = 1
 
 " ctrl-p replacement
-nno <leader>nrf :Unite file_mru file_rec/async:! -start-insert -auto-preview<CR>
-nno <leader>nf :Unite file_rec file_rec/async:! -start-insert -auto-preview<CR>
+nno <leader>nrf :Unite file_mru file_rec/async:! -start-insert<CR>
+nno <leader>nf :Unite file_rec file_rec/async:! -start-insert<CR>
 
 " Yank stack
 nnoremap <leader>ny :Unite history/yank<CR>
