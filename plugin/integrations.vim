@@ -24,7 +24,3 @@ noremap <leader>sf :Dispatch git fetch<CR>
 
 " Vundle!
 noremap <leader>B :BundleInstall!<CR>
-
-" Break to shell with <leader>S
-noremap <leader>S :shell<CR>
-
