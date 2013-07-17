@@ -64,3 +64,5 @@ if has('gui_running')
   noremap <D-,> :e ~/.vimrc<CR>
 endif
 
+" Hardmode
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
