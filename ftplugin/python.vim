@@ -6,6 +6,7 @@ autocmd FileType python set foldmethod=indent
 " YouCompleteMe navigation
 noremap <buffer> gd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
-" Define sections by PEP8's two-line recommendation and by classes
-noremap <buffer> [[ ?^\n\n\<bar>^\s*class<CR>
-noremap <buffer> ]] /^\n\n\<bar>^\s*class<CR>
+" Define sections by classes
+noremap <buffer> [[ ?^\(\%^\<bar>\n\n\)\zs\<bar>^\s*\zsclass<CR>
+noremap <buffer> ]] /^\(\%^\<bar>\n\n\)\zs\<bar>^\s*\zsclass<CR>
+
