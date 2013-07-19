@@ -7,6 +7,6 @@ autocmd FileType python set foldmethod=indent
 noremap <buffer> gd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " Define sections by classes
-noremap <buffer> [[ ?^\(\%^\<bar>\n\n\)\zs\<bar>^\s*\zsclass<CR>
-noremap <buffer> ]] /^\(\%^\<bar>\n\n\)\zs\<bar>^\s*\zsclass<CR>
+noremap <buffer> [[ ?^\(\%^\<bar>\n\n\)\zs\S\<bar>^\s*\zsclass<CR>
+noremap <buffer> ]] /^\(\%^\<bar>\n\n\)\zs\S\<bar>^\s*\zsclass<CR>
 
