@@ -14,3 +14,8 @@ hi CursorLineNr ctermbg=black guibg=black
 " Splits
 hi VertSplit ctermbg=none ctermfg=none guifg=none guibg=none
 
+" Solarized
+let g:solarized_contrast="high"
+let g:solarized_hitrail=1
+
+set background=dark
