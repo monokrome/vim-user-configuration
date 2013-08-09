@@ -24,3 +24,7 @@ noremap <leader>sf :Dispatch git fetch<CR>
 
 " Vundle!
 noremap <leader>B :BundleInstall!<CR>
+
+" Syntastic!
+let g:syntastic_always_populate_loc_list=1
+
