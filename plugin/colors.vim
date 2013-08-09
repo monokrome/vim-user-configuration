@@ -19,3 +19,7 @@ let g:solarized_contrast="high"
 let g:solarized_hitrail=1
 
 set background=dark
+
+" Long lines
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%80v.\+/
