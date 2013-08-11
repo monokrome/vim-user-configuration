@@ -64,3 +64,7 @@ if has('gui_running')
   noremap <D-,> :e ~/.vimrc<CR>
 endif
 
+" Open help winodws in vertical splits
+cnorea h tab help
+cnorea vh vert help
+cnorea hh help
