@@ -6,6 +6,9 @@ noremap <leader>se :Gedit<CR>
 noremap <leader>sw :Gwrite<CR>
 noremap <leader>sB :Gbrowse<CR>
 noremap <leader>sd :Gdiff<CR>
+noremap <leader>sp :Git push<CR>
+noremap <leader>su :Git pull<CR>
+noremap <leader>sf :Git fetch<CR>
 
 " Vim gitgutter
 let g:gitgutter_enabled = 0
@@ -18,9 +21,6 @@ noremap <leader>sH :GitGutterNextHunk<CR>
 " Dispatch! :D
 noremap <leader>m :Make<CR>
 noremap <leader>M :Make!<CR>
-noremap <leader>sp :Git push<CR>
-noremap <leader>su :Git pull<CR>
-noremap <leader>sf :Git fetch<CR>
 
 " Vundle!
 noremap <leader>B :BundleInstall!<CR>
