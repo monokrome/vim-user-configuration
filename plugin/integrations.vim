@@ -16,8 +16,8 @@ noremap <leader>sh :GitGutterNextHunk<CR>
 noremap <leader>sH :GitGutterNextHunk<CR>
 
 " Dispatch! :D
-noremap <leader>m :Dispatch<CR>
-noremap <leader>M :Dispatch!<CR>
+noremap <leader>m :Make<CR>
+noremap <leader>M :Make!<CR>
 noremap <leader>sp :Git push<CR>
 noremap <leader>su :Git pull<CR>
 noremap <leader>sf :Git fetch<CR>
