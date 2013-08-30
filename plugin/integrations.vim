@@ -18,9 +18,9 @@ noremap <leader>sH :GitGutterNextHunk<CR>
 " Dispatch! :D
 noremap <leader>m :Dispatch<CR>
 noremap <leader>M :Dispatch!<CR>
-noremap <leader>sp :Dispatch git push<CR>
-noremap <leader>su :Dispatch git pull<CR>
-noremap <leader>sf :Dispatch git fetch<CR>
+noremap <leader>sp :Git push<CR>
+noremap <leader>su :Git pull<CR>
+noremap <leader>sf :Git fetch<CR>
 
 " Vundle!
 noremap <leader>B :BundleInstall!<CR>
@@ -28,3 +28,5 @@ noremap <leader>B :BundleInstall!<CR>
 " Syntastic!
 let g:syntastic_always_populate_loc_list=1
 
+" XPTemplate!
+let g:xptemplate_snippet_filders=$HOME . '/.vimrc/bundle/vim-user-configuration/'
