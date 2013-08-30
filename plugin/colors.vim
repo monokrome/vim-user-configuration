@@ -2,8 +2,8 @@ syntax on
 colorscheme solarized
 
 " Cursor
-hi CursorLine ctermfg=none ctermbg=none cterm=bold
-hi CursorColumn ctermfg=none ctermbg=none cterm=bold
+hi CursorLine ctermfg=NONE ctermbg=NONE cterm=bold
+hi CursorColumn ctermfg=NONE ctermbg=NONE cterm=bold
 
 " Gutter
 hi SignColumn ctermbg=black guibg=black
@@ -11,7 +11,7 @@ hi LineNr ctermbg=black guibg=black
 hi CursorLineNr ctermbg=black guibg=black
 
 " Splits
-hi VertSplit ctermbg=none ctermfg=none guifg=none guibg=none
+hi VertSplit ctermbg=NONE ctermfg=NONE guifg=NONE guibg=NONE
 
 " Solarized
 let g:solarized_contrast="high"
