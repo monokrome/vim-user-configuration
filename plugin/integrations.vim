@@ -25,9 +25,6 @@ noremap <leader>M :Make!<CR>
 " Vundle!
 noremap <leader>B :BundleInstall!<CR>
 
-" Syntastic!
-let g:syntastic_always_populate_loc_list=1
-
 " XPTemplate!
 let g:xptemplate_snippet_filders=$HOME . '/.vimrc/bundle/vim-user-configuration/'
 
