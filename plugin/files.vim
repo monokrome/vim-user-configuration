@@ -34,10 +34,6 @@ set nowrap
 " Default expected width of documents
 set textwidth=79
 
-" Case-insensitive searches unless caps are explicitly provided
-set ignorecase
-set smartcase
-
 " Required to enable omnifunc completion
 filetype plugin indent on
 
