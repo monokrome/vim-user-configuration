@@ -31,11 +31,32 @@ function! FileTypeStatus()
   return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype : '') : ''
 endfunction
 
-function! FileStatus()
+function! FileFormatStatus()
+  return winwidth(0) > 70 ? &fileformat : ''
+endfunction
+
+function! FileEncodingStatus()
+  return winwidth(0) > 70 ? (strlen(&fenc) ? &fenc : &enc) : ''
+endfunction
+
+function! FileNameStatus()
   return ('' != ReadOnlyStatus() ? ReadOnlyStatus() . ' ' : '') .
        \ ('' != expand('%:t') ? expand('%:t') : '') .
-       \ ('' != FileTypeStatus() ? ' [' . FileTypeStatus() . ']' : '') .
        \ ('' != ModifiedStatus() ? ' ' . ModifiedStatus() : '')
+endfunction
+
+function! ModeStatus()
+  let fname = expand('%:t')
+
+  return fname == '__Tagbar__' ? 'Tagbar' :
+        \ fname == 'ControlP' ? 'CtrlP' :
+        \ fname == '__Gundo__' ? 'Gundo' :
+        \ fname == '__Gundo_Preview__' ? 'Gundo Preview' :
+        \ fname =~ 'NERD_tree' ? 'NERDTree' :
+        \ &ft == 'unite' ? 'Unite' :
+        \ &ft == 'vimfiler' ? 'VimFiler' :
+        \ &ft == 'vimshell' ? 'VimShell' :
+        \ winwidth(0) > 60 ? lightline#mode() : ''
 endfunction
 
 
@@ -47,12 +68,27 @@ let g:lightline = {
   \      'readonly': 'ReadOnlyStatus',
   \      'modified': 'ModifiedStatus',
   \      'fugitive': 'FugitiveStatus',
-  \      'filename': 'FileStatus'
+  \      'filename': 'FileNameStatus',
+  \      'filetype': 'FileTypeStatus',
+  \      'fileformat': 'FileFormatStatus',
+  \      'fileencoding': 'FileEncodingStatus',
+  \      'mode': 'ModeStatus'
+  \    },
+  \    'component_expand': {
+  \      'syntastic': 'SyntasticStatuslineFlag'
+  \    },
+  \    'component_type': {
+  \      'syntastic': 'error',
   \    },
   \    'active': {
   \      'left': [
   \        ['mode', 'paste'],
   \        ['fugitive', 'filename']
+  \      ],
+  \      'right': [
+  \        ['syntastic', 'lineinfo'],
+  \        ['percent'],
+  \        ['fileformat', 'fileencoding', 'filetype']
   \      ]
   \    }
   \  }
