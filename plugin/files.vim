@@ -13,8 +13,8 @@ let g:gundo_preview_bottom = 1
 let g:gundo_right = 1
 let g:gundo_close_on_revert = 1
 
-" Make NERDTree use netrw
-let NERDTreeHijackNetrw=1
+" Make vimfiler use netrw
+let g:vimfiler_as_default_explorer = 1
 
 " Map ,u to show the GUndo pane
 noremap <leader>u :GundoToggle<CR>
