@@ -1,16 +1,37 @@
+function! ModifiedStatus()
+  if &filetype == "help"
+    return ""
+  elseif &modified
+    return "+"
+  elseif &modifiable
+    return ""
+  else
+    return ""
+  endif
+endfunction
+
+function! ReadOnlyStatus()
+  if &filetype == "help"
+    return ""
+  elseif &readonly
+    return "RO"
+  else
+    return ""
+  endif
+endfunction
+
+function! FugitiveStatus()
+  return exists('*fugitive#head') ? fugitive#head() : ''
+endfunction
+
 let g:lightline = {
   \    'colorscheme': 'solarized',
   \    'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
   \    'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" },
-  \    'component': {
-  \      'readonly': '%{&filetype=="help"?"":&readonly?"⭤":""}',
-  \      'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
-  \      'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}'
-  \    },
-  \    "component_visible_condition": {
-  \      'readonly': '(&filetype!="help"&& &readonly)',
-  \      'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
-  \      'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
+  \    'component_function': {
+  \      'readonly': 'ReadOnlyStatus',
+  \      'modified': 'ModifiedStatus',
+  \      'fugitive': 'FugitiveStatus'
   \    },
   \    'active': {
   \      'left': [
