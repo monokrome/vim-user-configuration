@@ -17,8 +17,9 @@ hi VertSplit ctermbg=NONE ctermfg=NONE guifg=NONE guibg=NONE
 let g:solarized_contrast="high"
 let g:solarized_hitrail=1
 
+" Use dark background for solarized theme
 set background=dark
 
-" Long lines
+" Highlight long lines
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%80v.\+/
