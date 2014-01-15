@@ -23,7 +23,7 @@ set ruler
 set wildmode=longest:full
 set wildmenu
 
-" Defualt to not have any folds
+" Default to not have any folds
 set foldlevelstart=99
 
 " Disable warnings about files having been changed when switching
