@@ -14,15 +14,25 @@ function! ReadOnlyStatus()
   if &filetype == "help"
     return ""
   elseif &readonly
-    return "RO"
+    return "\ue0a2"
   else
     return ""
   endif
 endfunction
 
 function! FugitiveStatus()
-  return exists('*fugitive#head') ? fugitive#head() : ''
+  if exists('*fugitive#head')
+    let head = fugitive#head()
+    return strlen(head) ? "\ue0a0 " . head : ''
+  endif
 endfunction
+
+function! FilenameStatus()
+  return ('' != ReadOnlyStatus() ? ReadOnlyStatus() . ' ' : '') .
+       \ ('' != expand('%:t') ? expand('%:t') : '') .
+       \ ('' != ModifiedStatus() ? ' ' . ModifiedStatus() : '')
+endfunction
+
 
 let g:lightline = {
   \    'colorscheme': 'solarized',
@@ -31,13 +41,13 @@ let g:lightline = {
   \    'component_function': {
   \      'readonly': 'ReadOnlyStatus',
   \      'modified': 'ModifiedStatus',
-  \      'fugitive': 'FugitiveStatus'
+  \      'fugitive': 'FugitiveStatus',
+  \      'filename': 'FilenameStatus'
   \    },
   \    'active': {
   \      'left': [
-  \        [ 'mode', 'paste' ],
-  \        [ 'readonly', 'filename', 'modified' ],
-  \        [ 'fugitive' ]
+  \        ['mode', 'paste'],
+  \        ['fugitive', 'filename']
   \      ]
   \    }
   \  }
