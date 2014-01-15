@@ -18,6 +18,13 @@ noremap <leader>sG :GitGutterLineHighlightsToggle<CR>
 noremap <leader>sh :GitGutterNextHunk<CR>
 noremap <leader>sH :GitGutterNextHunk<CR>
 
+" Makeshift! :D
+let s:build_path = finddir('.build', '.', 1)
+
+if '' != s:build_path
+  let g:makeshift_root=s:build_path
+endif
+
 " Dispatch! :D
 noremap <leader>m :Make<CR>
 noremap <leader>M :Make!<CR>
