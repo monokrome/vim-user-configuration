@@ -23,7 +23,8 @@ noremap <leader>m :Make<CR>
 noremap <leader>M :Make!<CR>
 
 " Vundle!
-noremap <leader>B :BundleInstall!<CR>
+noremap <leader>b :NeoBundleInstall<CR>
+noremap <leader>B :NeoBundleInstall!<CR>
 
 " Gist!
 let g:gist_clip_comman = 'pbcopy'
