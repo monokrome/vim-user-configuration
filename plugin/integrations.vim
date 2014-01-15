@@ -25,9 +25,6 @@ noremap <leader>M :Make!<CR>
 " Vundle!
 noremap <leader>B :BundleInstall!<CR>
 
-" XPTemplate!
-let g:xptemplate_snippet_filders=$HOME . '/.vimrc/bundle/vim-user-configuration/'
-
 " Gist!
 let g:gist_clip_comman = 'pbcopy'
 let g:gist_detect_filetype = 1
