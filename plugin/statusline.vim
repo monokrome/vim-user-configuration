@@ -27,9 +27,14 @@ function! FugitiveStatus()
   endif
 endfunction
 
-function! FilenameStatus()
+function! FileTypeStatus()
+  return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype : '') : ''
+endfunction
+
+function! FileStatus()
   return ('' != ReadOnlyStatus() ? ReadOnlyStatus() . ' ' : '') .
        \ ('' != expand('%:t') ? expand('%:t') : '') .
+       \ ('' != FileTypeStatus() ? ' [' . FileTypeStatus() . ']' : '') .
        \ ('' != ModifiedStatus() ? ' ' . ModifiedStatus() : '')
 endfunction
 
@@ -42,7 +47,7 @@ let g:lightline = {
   \      'readonly': 'ReadOnlyStatus',
   \      'modified': 'ModifiedStatus',
   \      'fugitive': 'FugitiveStatus',
-  \      'filename': 'FilenameStatus'
+  \      'filename': 'FileStatus'
   \    },
   \    'active': {
   \      'left': [
