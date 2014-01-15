@@ -1,3 +1,8 @@
+function! TagbarStatusFunc(current, sort, fname, ...) abort
+  let g:lightline.fname = a:fname
+  return lightline#statusline(0)
+endfunction
+
 function! ModifiedStatus()
   if &filetype == "help"
     return ""
@@ -21,10 +26,15 @@ function! ReadOnlyStatus()
 endfunction
 
 function! FugitiveStatus()
-  if exists('*fugitive#head')
-    let head = fugitive#head()
-    return strlen(head) ? "\ue0a0 " . head : ''
-  endif
+  try
+    if expand('%:t') !~? 'Tagbar\|Gundo\|NERD' && &ft !~? 'vimfiler' && exists('*fugitive#head')
+      let head = fugitive#head()
+      return strlen(head) ? "\ue0a0 " . head : ''
+    endif
+  catch
+  endtry
+
+  return ''
 endfunction
 
 function! FileTypeStatus()
@@ -92,3 +102,11 @@ let g:lightline = {
   \      ]
   \    }
   \  }
+
+
+
+let g:tagbar_status_func = 'TagbarStatusFunc'
+
+let g:unite_force_overwrite_statusline = 0
+let g:vimfiler_force_overwrite_statusline = 0
+let g:vimshell_force_overwrite_statusline = 0
