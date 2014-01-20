@@ -58,8 +58,8 @@ nnoremap <leader>nb :Unite buffer -quick-match -auto-preview<CR>
 nno <leader>nd :Unite directory_mru directory -start-insert -buffer-name=cd -default-action=cd<CR>
 
 " Tagbar-like tool
-nnoremap <leader>nt :Unite outline<CR>
-nnoremap <leader>nT :Unite tag<CR>
+nnoremap <leader>nt :Unite outline -auto-preview<CR>
+nnoremap <leader>nT :Unite tag -auto-preview<CR>
 
 " MacVim / GVim stuff.
 if has('gui_running')
