@@ -81,3 +81,7 @@ let s:ctags_bin = findfile(
 if ('' != s:ctags_bin)
   let g:tagbar_ctags_bin=''
 endif
+
+" Jump to and re-source vimrc files easily.
+nmap <silent> <leader>ev :e $MYVIMRC<cr>
+nmap <silent> <leader>sv :so $MYVIMRC<cr>
