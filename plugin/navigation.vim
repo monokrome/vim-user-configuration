@@ -70,3 +70,14 @@ endif
 cnorea h tab help
 cnorea vh vert help
 cnorea hh help
+
+" Find ctags binary
+let s:ctags_bin = findfile(
+  \    'ctags',
+  \    $HOME . '/bin;' .  $HOME . '/.config/homebrew;/usr/local/bin;/usr/bin;/bin',
+  \    1
+  \ )
+
+if ('' != s:ctags_bin)
+  let g:tagbar_ctags_bin=''
+endif
