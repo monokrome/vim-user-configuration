@@ -1,5 +1,7 @@
 syntax on
-colorscheme solarized
+
+" Badwolf color scheme
+colorscheme badwolf
 
 " Cursor
 hi CursorLine ctermfg=NONE ctermbg=NONE cterm=bold
