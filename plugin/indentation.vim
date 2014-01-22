@@ -5,7 +5,6 @@ set smartindent
 " Tab widths
 set tabstop=2
 set softtabstop=2
-set shiftwidth=2
 set laststatus=1
 
 " Expand tabs to spaces
