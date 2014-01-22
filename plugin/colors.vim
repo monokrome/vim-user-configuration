@@ -19,6 +19,12 @@ hi VertSplit ctermbg=NONE ctermfg=NONE guifg=NONE guibg=NONE
 let g:solarized_contrast="high"
 let g:solarized_hitrail=1
 
+" Badwolf
+let g:badwofl_html_link_underline = 0
+let g:badwolf_darkgutter = 0
+let g:badwolf_tabline = 0
+let g:badwolf_css_props_highlight = 1
+
 " Use dark background for solarized theme
 set background=dark
 
