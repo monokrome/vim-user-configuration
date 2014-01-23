@@ -27,6 +27,7 @@ highlight NonText ctermfg=black guifg=black
 
 " Highlight search results
 set hlsearch
+nnoremap <leader><space> :nohlsearch<CR>
 
 " Don't wrap text
 set nowrap
