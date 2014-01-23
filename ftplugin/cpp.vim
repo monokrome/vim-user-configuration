@@ -1,4 +1,6 @@
-noremap <buffer> gd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+augroup user_ftype_cpp
+        noremap <buffer> gd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
-autocmd FileType java setlocal noexpandtab
-autocmd FileType java setlocal list
+        autocmd FileType java setlocal noexpandtab
+        autocmd FileType java setlocal list
+augroup END
