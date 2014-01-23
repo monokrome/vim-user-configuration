@@ -25,8 +25,8 @@ set wildignore=*/node_modules/*,*/lib/python*,*.pid,*.pyc,*.iml,*.rdb,*.db,*.sql
 " Hide the ugly little tilde after EOF
 highlight NonText ctermfg=black guifg=black
 
-" Don't use incsearch from vim-sensible
-set noincsearch
+" Highlight search results
+set hlsearch
 
 " Don't wrap text
 set nowrap
