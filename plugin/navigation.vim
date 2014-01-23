@@ -25,6 +25,7 @@ set wildmenu
 
 " Default to not have any folds
 set foldlevelstart=99
+nnoremap <space> za
 let g:vim_markdown_initial_foldlevel=9
 
 " Disable warnings about files having been changed when switching
