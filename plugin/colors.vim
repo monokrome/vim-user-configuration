@@ -1,7 +1,11 @@
 syntax on
 
 " Badwolf color scheme
-colorscheme badwolf
+if has('gui_running')
+  colorscheme badwolf
+else
+  colorsheme soliarized
+endif
 
 " Cursor
 hi CursorLine ctermfg=NONE ctermbg=NONE cterm=bold
