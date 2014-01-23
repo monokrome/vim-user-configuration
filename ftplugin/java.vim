@@ -1,4 +1,4 @@
-augroup user_ftype_java
+augroup user_ftplugin_java
         autocmd FileType java setlocal noexpandtab
         autocmd FileType java setlocal list
         autocmd FileType java setlocal listchars=tab:+\ ,eol:-

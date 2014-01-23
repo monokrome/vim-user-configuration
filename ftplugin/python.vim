@@ -1,4 +1,4 @@
-augroup user_ftype_python
+augroup user_ftplugin_python
         autocmd FileType python set softtabstop=4
         autocmd FileType python set tabstop=4
         autocmd FileType python set expandtab

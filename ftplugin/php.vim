@@ -1,4 +1,4 @@
-augroup user_ftype_php
+augroup user_ftplugin_php
         autocmd FileType php setlocal expandtab
         autocmd FileType php setlocal list
         autocmd FileType php setlocal listchars=tab:+\ ,eol:-
