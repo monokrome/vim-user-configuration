@@ -4,11 +4,11 @@ augroup user_ftype_python
         autocmd FileType python set expandtab
         autocmd FileType python set foldmethod=indent
         autocmd FileType python setlocal commentstring=#\ %s
-
-        " YouCompleteMe navigation
-        noremap <buffer> gd :YcmCompleter GoToDefinitionElseDeclaration<CR>
-
-        " Define sections by classes
-        noremap <buffer> [[ ?^\(\%^\<bar>\n\n\s*\)\zs\S\<bar>^\zsclass<CR>
-        noremap <buffer> ]] /^\(\%^\<bar>\n\n\s*\)\zs\S\<bar>^\zsclass<CR>
 augroup END
+
+" YouCompleteMe navigation
+noremap <buffer> gd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+" Define sections by classes
+noremap <buffer> [[ ?^\(\%^\<bar>\n\n\s*\)\zs\S\<bar>^\zsclass<CR>
+noremap <buffer> ]] /^\(\%^\<bar>\n\n\s*\)\zs\S\<bar>^\zsclass<CR>
