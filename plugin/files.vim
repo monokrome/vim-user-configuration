@@ -34,7 +34,7 @@ set nowrap
 " Default expected width of documents
 set textwidth=79
 
-" Required to enable omnifunc completion
+" Enable filetype-specific indentation
 filetype plugin indent on
 
 " Put undo files in tmp directory
