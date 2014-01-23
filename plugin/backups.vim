@@ -4,4 +4,3 @@ set backupskip=/tmp/*,/private/tmp/*
 set directory=~/.vim/tmp/swap,~/.tmp/swap,~/tmp/swap,/var/tmp/swap,/tmp 
 set writebackup
 set backupcopy=yes
-
