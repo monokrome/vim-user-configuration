@@ -44,6 +44,7 @@ noremap <leader>lc :changes<CR>
 
 " Use fuzzy matching for fuzzy matching
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
+call unite#filters#sorter_default#use(['sorter_rank'])
 
 " Let unite.vim follow yanks
 let g:unite_source_history_yank_enable = 1
