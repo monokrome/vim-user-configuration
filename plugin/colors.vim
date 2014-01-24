@@ -4,7 +4,7 @@ syntax on
 if has('gui_running')
   colorscheme badwolf
 else
-  colorsheme soliarized
+  colorsheme solarized
 endif
 
 " Cursor
