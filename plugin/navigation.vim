@@ -43,28 +43,32 @@ noremap <leader>lj :jumps<CR>
 noremap <leader>lc :changes<CR>
 
 " Use fuzzy matching for fuzzy matching
+let g:unite_enable_start_insert = 1
+let g:unite_winheight = 10
+let g:unite_split_rule = 'botright'
+
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 call unite#filters#sorter_default#use(['sorter_rank'])
 
 " Let unite.vim follow yanks
 let g:unite_source_history_yank_enable = 1
 
-" ctrl-p replacement
+" File access
 nno <leader>nrf :Unite file_mru file_rec/async:! -start-insert<CR>
 nno <leader>nf :Unite file_rec file_rec/async:! -start-insert<CR>
 
-" Yank stack
+" Yank history
 nnoremap <leader>ny :Unite history/yank<CR>
 
 " A bit like lusty-juggler
-nnoremap <leader>nb :Unite buffer -quick-match -auto-preview<CR>
+nnoremap <leader>nb :Unite buffer -quick-match<CR>
 
 " Change to recently used directories
 nno <leader>nd :Unite directory_mru directory -start-insert -buffer-name=cd -default-action=cd<CR>
 
 " Tagbar-like tool
-nnoremap <leader>nt :Unite outline -auto-preview -start-insert<CR>
-nnoremap <leader>nT :Unite tag -auto-preview -start-insert<CR>
+nnoremap <leader>nt :Unite outline -start-insert<CR>
+nnoremap <leader>nT :Unite tag -start-insert<CR>
 
 " MacVim / GVim stuff.
 if has('gui_running')
@@ -95,7 +99,7 @@ if has('autocmd')
   " Clear the signs column
   autocmd VimEnter * highlight clear SignColumn
 
-  augroup unite_tag
+  augroup unite
     " Use unite-tag to jump to tags
     autocmd BufEnter *
       \   if empty(&buftype)
