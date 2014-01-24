@@ -94,9 +94,11 @@ if has('autocmd')
   " Clear the signs column
   autocmd VimEnter * highlight clear SignColumn
 
-  " Use unite-tag to jump to tags
-  autocmd BufEnter *
-    \   if empty(&buftype)
-    \|      nnoremap <buffer> <C-]> :<C-u>UniteWithCursorWord -immediately tag<CR>
-    \|  endif
+  augroup unite_tag
+    " Use unite-tag to jump to tags
+    autocmd BufEnter *
+      \   if empty(&buftype)
+      \|      nnoremap <buffer> <C-]> :<C-u>UniteWithCursorWord -immediately tag<CR>
+      \|  endif
+  augroup END
 endif
