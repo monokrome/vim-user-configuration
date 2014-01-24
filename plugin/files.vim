@@ -47,3 +47,6 @@ set shortmess+=o
 " Remove all trailing white space when writing files
 " autocmd BufWritePre * :%s/[^\\]\s\+$//e
 
+if has('autocmd')
+  autocmd CursorHold,BufWritePost,BufReadPost,BufLeave * if !$VIMSWAP && isdirectory(expand("<amatch>:h")) | let &swapfile = &modified | endif
+endif
