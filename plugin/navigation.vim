@@ -90,7 +90,13 @@ endif
 nmap <silent> <leader>ev :e $MYVIMRC<cr>
 nmap <silent> <leader>sv :so $MYVIMRC<cr>
 
-" Clear the signs column
 if has('autocmd')
+  " Clear the signs column
   autocmd VimEnter * highlight clear SignColumn
+
+  " Use unite-tag to jump to tags
+  autocmd BufEnter *
+    \   if empty(&buftype)
+    \|      nnoremap <buffer> <C-]> :<C-u>UniteWithCursorWord -immediately tag<CR>
+    \|  endif
 endif
