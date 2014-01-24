@@ -91,4 +91,6 @@ nmap <silent> <leader>ev :e $MYVIMRC<cr>
 nmap <silent> <leader>sv :so $MYVIMRC<cr>
 
 " Clear the signs column
-autocmd VimEnter * highlight clear SignColumn
+if has('autocmd')
+  autocmd VimEnter * highlight clear SignColumn
+endif
