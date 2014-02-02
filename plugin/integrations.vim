@@ -26,8 +26,10 @@ if '' != s:build_path
 endif
 
 " Dispatch! :D
-noremap <leader>m :Make<CR>
-noremap <leader>M :Make!<CR>
+noremap <leader>md :Dispatch<CR>
+noremap <leader>mD :Dispatch!<CR>
+noremap <leader>mm :Make<CR>
+noremap <leader>mM :Make!<CR>
 
 " Vundle!
 noremap <leader>b :NeoBundleInstall<CR>
