@@ -29,7 +29,7 @@ class CompilationDatabaseProvider(FlagProvider):
 
         for root, dirs, files in os.walk('.'):
             if 'compile_commands.json' in files:
-                compilation_directory = os.path.abspath('.build')
+                compilation_directory = os.path.abspath(root)
                 break
 
         if compilation_directory is not None:
