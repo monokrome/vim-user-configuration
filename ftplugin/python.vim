@@ -1,10 +1,8 @@
-augroup user_ftplugin_python
-        autocmd FileType python set softtabstop=4
-        autocmd FileType python set tabstop=4
-        autocmd FileType python set expandtab
-        autocmd FileType python set foldmethod=indent
-        autocmd FileType python setlocal commentstring=#\ %s
-augroup END
+setlocal softtabstop=4
+setlocal tabstop=4
+setlocal expandtab
+setlocal foldmethod=indent
+setlocal commentstring=#\ %s
 
 " YouCompleteMe navigation
 noremap <buffer> gd :YcmCompleter GoToDefinitionElseDeclaration<CR>

@@ -1,6 +1,4 @@
-augroup user_ftplugin_ruby
-        autocmd FileType ruby setlocal tabstop=2
-        autocmd FileType ruby setlocal shiftwidth=2
-        autocmd FileType ruby setlocal softtabstop=2
-        autocmd FileType ruby setlocal commentstring=#\ %s
-augroup END
+setlocal tabstop=2
+setlocal shiftwidth=2
+setlocal softtabstop=2
+setlocal commentstring=#\ %s
