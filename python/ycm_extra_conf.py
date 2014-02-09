@@ -61,10 +61,11 @@ def has_database(provider):
     return provider.database is not None
 
 
-def FlagsForFile(filename, **details):
-    providers = map(instantiate_class, provider_types)
-    ready_providers = filter(has_database, providers)
+providers = map(instantiate_class, provider_types)
+ready_providers = filter(has_database, providers)
 
+
+def FlagsForFile(filename, **details):
     for index in xrange(len(ready_providers)):
         provider = ready_providers[index]
         flags = provider.get_flags(filename, details)
