@@ -93,7 +93,7 @@ endif
 
 " Jump to and re-source vimrc files easily.
 nmap <silent> <leader>ev :e $MYVIMRC<cr>
-nmap <silent> <leader>sv :so $MYVIMRC<cr>
+nmap <silent> <leader>esv :so $MYVIMRC<cr>
 
 if has('autocmd')
   " Clear the signs column
