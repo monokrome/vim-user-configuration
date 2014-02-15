@@ -92,8 +92,10 @@ if ('' != s:ctags_bin)
 endif
 
 " Jump to and re-source vimrc files easily.
-nmap <silent> <leader>ev :e $MYVIMRC<cr>
-nmap <silent> <leader>esv :so $MYVIMRC<cr>
+if exists('$MYVIMRC')
+  nmap <silent> <leader>ev :e $MYVIMRC<cr>
+  nmap <silent> <leader>eu :e $VIM/bundle/vim-user-configuration<cr>
+endif
 
 if has('autocmd')
   " Clear the signs column
