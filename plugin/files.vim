@@ -49,4 +49,6 @@ set shortmess+=o
 
 if has('autocmd')
   autocmd CursorHold,BufWritePost,BufReadPost,BufLeave * if !$VIMSWAP && isdirectory(expand("<amatch>:h")) | let &swapfile = &modified | endif
+  autocmd BufRead,BufNewFile *.muttrc,.muttrc,muttrc set filetype=muttrc
+  autocmd BufRead,BufNewFile *.scons,SConstruct set filetype=python
 endif
