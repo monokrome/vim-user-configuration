@@ -52,3 +52,7 @@ if has('autocmd')
   autocmd BufRead,BufNewFile *.muttrc,.muttrc,muttrc set filetype=muttrc
   autocmd BufRead,BufNewFile *.scons,SConstruct set filetype=python
 endif
+
+
+" Angular.JS
+let g:angular_src_path = 'src/'
