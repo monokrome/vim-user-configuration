@@ -94,6 +94,7 @@ endif
 " Jump to and re-source vimrc files easily.
 if exists('$MYVIMRC')
   nmap <silent> <leader>ev :e $MYVIMRC<cr>
+  nmap <silent> <leader>esv :so $MYVIMRC<cr>
   nmap <silent> <leader>eu :e $VIM/bundle/vim-user-configuration<cr>
 endif
 
