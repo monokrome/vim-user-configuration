@@ -57,7 +57,7 @@ augroup END
 
 " Allow per-project settings!
 function! s:apply_locals()
-  let l:locals = findfile('Project.vim', '.')
+  let l:locals = findfile('Project.vim', '.;')
 
   if filereadable(l:locals)
     exec ':source '.l:locals
