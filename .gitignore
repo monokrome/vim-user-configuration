@@ -1,3 +1,5 @@
+/plugin/locals.vim
+
 *.spl
 *.pyc
 
