@@ -35,3 +35,6 @@ set background=dark
 " Highlight long lines
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%80v.\+/
+
+"
+hi VertSplit ctermbg=NONE ctermfg=bg guifg=bg guibg=NONE
