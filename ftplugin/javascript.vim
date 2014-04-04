@@ -6,9 +6,9 @@ setlocal commentstring=//\ %s
 
 " call JavaScriptFold()
 
-nnoremap gd :TernDef<CR>
-nnoremap K :TernDoc<CR>
-nnoremap Cw :TernRename<CR>
+nnoremap <buffer> gd :TernDef<CR>
+nnoremap <buffer> K :TernDoc<CR>
+nnoremap <buffer> Cw :TernRename<CR>
 
 " Other things to consider binding:
 " 
