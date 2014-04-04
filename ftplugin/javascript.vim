@@ -8,12 +8,6 @@ setlocal commentstring=//\ %s
 
 nnoremap <buffer> gd :TernDef<CR>
 nnoremap <buffer> K :TernDoc<CR>
-nnoremap <buffer> Cw :TernRename<CR>
-
-" Other things to consider binding:
-" 
-" Find references:
-"   :TernRefs<CR>
-" 
-" Get type of object:
-"   :TernType<CR>
+nnoremap <buffer> <localleader>rr :TernRename<CR>
+nnoremap <bufeer> <localleader>/r :TernRefs<CR>
+nnoremap <bufeer> <localleader>/t :TernType<CR>
