@@ -1,18 +1,18 @@
-imap <buffer> <TAB> <Plug>(unite_select_next_line)
+inoremap <buffer> <TAB> <Plug>(unite_select_next_line)
 
-imap <buffer> ' <Plug>(unite_quick_match_default_action)
-nmap <buffer> ' <Plug>(unite_quick_match_default_action)
+inoremap <buffer> ' <Plug>(unite_quick_match_default_action)
+nnoremap <buffer> ' <Plug>(unite_quick_match_default_action)
 
-nmap <buffer> <C-z>     <Plug>(unite_toggle_transpose_window)
-imap <buffer> <C-z>     <Plug>(unite_toggle_transpose_window)
+nnoremap <buffer> <C-z>     <Plug>(unite_toggle_transpose_window)
+inoremap <buffer> <C-z>     <Plug>(unite_toggle_transpose_window)
 
-imap <buffer> <C-y>     <Plug>(unite_narrowing_path)
-nmap <buffer> <C-y>     <Plug>(unite_narrowing_path)
+inoremap <buffer> <C-y>     <Plug>(unite_narrowing_path)
+nnoremap <buffer> <C-y>     <Plug>(unite_narrowing_path)
 
-nmap <buffer> <C-j>     <Plug>(unite_toggle_auto_preview)
+nnoremap <buffer> <C-j>     <Plug>(unite_toggle_auto_preview)
 
-nmap <buffer> <C-r>     <Plug>(unite_narrowing_input_history)
-imap <buffer> <C-r>     <Plug>(unite_narrowing_input_history)
+nnoremap <buffer> <C-r>     <Plug>(unite_narrowing_input_history)
+inoremap <buffer> <C-r>     <Plug>(unite_narrowing_input_history)
 
 nnoremap <silent><buffer><expr> l unite#smart_map('l', unite#do_action('default'))
 
@@ -30,4 +30,4 @@ nnoremap <buffer><expr> S unite#mappings#set_current_filters(
         \ empty(unite#mappings#get_current_filters()) ?
         \ ['sorter_reverse'] : [])
 
-imap <silent><buffer><expr> <C-s> unite#do_action('split')
+inoremap <silent><buffer><expr> <C-s> unite#do_action('split')

@@ -1,6 +1,6 @@
 " j/k make a lot more sense this way when lines are wrapped 
-nmap j gj
-nmap k gk
+nnoremap j gj
+nnoremap k gk
 
 " Multi-cursor bindings
 let g:multi_cursor_use_default_mapping=0
@@ -93,9 +93,9 @@ endif
 
 " Jump to and re-source vimrc files easily.
 if exists('$MYVIMRC')
-  nmap <silent> <leader>ev :e $MYVIMRC<cr>
-  nmap <silent> <leader>esv :so $MYVIMRC<cr>
-  nmap <silent> <leader>eu :e $VIM/bundle/vim-user-configuration<cr>
+  nnoremap <silent> <leader>ev :e $MYVIMRC<cr>
+  nnoremap <silent> <leader>esv :so $MYVIMRC<cr>
+  nnoremap <silent> <leader>eu :e $VIM/bundle/vim-user-configuration<cr>
 endif
 
 if has('autocmd')
