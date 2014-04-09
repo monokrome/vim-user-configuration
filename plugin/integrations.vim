@@ -10,13 +10,22 @@ noremap <leader>sp :Git push<CR>
 noremap <leader>su :Git pull<CR>
 noremap <leader>sf :Git fetch<CR>
 
-" Vim gitgutter
-let g:gitgutter_enabled = 0
+" Signify
+let g:signify_disable_by_default = 1
+let g:signify_update_on_bufenter = 1
+let g:signify_update_on_focusgained = 1
+let g:signify_cursorhold_normal = 1
+let g:signify_cursorhold_insert = 1
 
-noremap <leader>sg :GitGutterToggle<CR>
-noremap <leader>sG :GitGutterLineHighlightsToggle<CR>
-noremap <leader>sh :GitGutterNextHunk<CR>
-noremap <leader>sH :GitGutterNextHunk<CR>
+let g:signify_sign_add               = '+'
+let g:signify_sign_change            = '~'
+let g:signify_sign_delete            = '_'
+let g:signify_sign_delete_first_line = '‾'
+
+let g:signify_mapping_toggle = '<leader>sg'
+let g:signify_mapping_toggle_highlight = '<leader>sG'
+let g:signify_mapping_next_hunk = '<leader>sj'
+let g:signify_mapping_prev_hunk = '<leader>sk'
 
 " Makeshift! :D
 let s:build_path = finddir('.build', '.', 1)
