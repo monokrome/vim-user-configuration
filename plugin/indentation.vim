@@ -10,3 +10,5 @@ set laststatus=1
 " Expand tabs to spaces
 set expandtab
 
+" Show line breaks as arrows
+set showbreak=↪
