@@ -56,3 +56,9 @@ endif
 
 " Angular.JS
 let g:angular_src_path = 'src/'
+
+" Reload vimrc file whenever it changes
+augroup reload_vimrc
+    autocmd!
+    autocmd BufWritePost $MYVIMRC source $MYVIMRC
+augroup END
