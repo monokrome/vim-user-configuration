@@ -79,3 +79,6 @@ augroup AutoLocals
   autocmd!
   autocmd BufNewFile,BufRead,VimEnter * call s:apply_locals()
 augroup END
+
+" Append the current pivotal URL as "Finsihed" to the end of the document
+nmap <leader>Tf G2] Gi[Finishes #] pvT/yF#p:nohl
