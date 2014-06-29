@@ -13,3 +13,8 @@ let g:ycm_complete_in_comments = 1
 
 let g:ycm_error_symbol = '!!'
 let g:ycm_error_symbol = '>>'
+
+let g:UltiSnipsExpandTrigger="<c-e>"
+let g:UltiSnipsJumpBackwardTrigger="<c-p>"
+let g:UltiSnipsJumpForwardTrigger="<c-n>"
+let g:UltiSnipsListSnippets="<c-E>"
