@@ -82,3 +82,6 @@ augroup END
 
 " Append the current pivotal URL as "Finsihed" to the end of the document
 nmap <leader>Tf G2] Gi[Finishes #] pvT/yF#p:nohl
+
+" Go integrations!
+let g:go_snippet_engine = 'ultisnips'
