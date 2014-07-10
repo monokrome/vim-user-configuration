@@ -9,5 +9,5 @@ setlocal commentstring=#\ %s
 noremap <buffer> gd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " Define sections by classes
-noremap <buffer> [[ ?^\(\%^\<bar>\n\n\s*\)\zs\S\<bar>^\zsclass<CR>
-noremap <buffer> ]] /^\(\%^\<bar>\n\n\s*\)\zs\S\<bar>^\zsclass<CR>
+noremap <buffer> [[ ?^\(\%^\<bar>\n\n\s*\)\zs\S\<bar>^\zsclass<CR>:nohlsearch<CR>
+noremap <buffer> ]] /^\(\%^\<bar>\n\n\s*\)\zs\S\<bar>^\zsclass<CR>:nohlsearch<CR>
