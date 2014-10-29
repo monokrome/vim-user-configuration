@@ -1,5 +1,5 @@
 This is part of my Vim configuration, which uses Vundle. If you
-are interested in using this - please install pathogen by following
+are interested in using this - please install Vundle by following
 the documentation [here](https://github.com/gmarik/vundle).
 
 After installing Vundle, you can jadd the following to your vimrc in order to
