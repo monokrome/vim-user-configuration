@@ -42,9 +42,9 @@ nnoremap <leader>mM :Make!<CR>
 nnoremap <leader>mc :Make clean<CR>
 nnoremap <leader>mC :Make! clean<CR>
 
-" Vundle!
-noremap <leader>b :NeoBundleInstall<CR>
-noremap <leader>B :NeoBundleInstall!<CR>
+" Plug!
+noremap <leader>b :PlugInstall<CR>
+noremap <leader>B :PlugInstall!<CR>
 
 " Gist!
 let g:gist_clip_comman = 'pbcopy'
