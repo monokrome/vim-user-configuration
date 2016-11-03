@@ -5,9 +5,10 @@ setlocal expandtab
 setlocal foldmethod=indent
 setlocal commentstring=#\ %s
 
-" YouCompleteMe navigation
-noremap <buffer> gd :YcmCompleter GoToDefinitionElseDeclaration<CR>
-
 " Define sections by classes
 noremap <buffer> [[ ?^\(\%^\<bar>\n\n\s*\)\zs\S\<bar>^\zsclass<CR>:nohlsearch<CR>
 noremap <buffer> ]] /^\(\%^\<bar>\n\n\s*\)\zs\S\<bar>^\zsclass<CR>:nohlsearch<CR>
+
+" Go to definitions using vim-jedi
+noremap <buffer> gd :call jedi#goto_assignments()<CR>
+noremap <buffer> gD :call jedi#goto_definitions()<CR>
