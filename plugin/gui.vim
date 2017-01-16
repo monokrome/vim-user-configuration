@@ -1,5 +1,4 @@
 if has('gui_running')
-  set guioptions=
+  set guioptions=c
   set guifont=Menlo\ for\ Powerline
-  set go+=c
 endif
