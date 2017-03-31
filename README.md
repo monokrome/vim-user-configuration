@@ -1,7 +1,7 @@
-This is part of my Vim configuration, which uses Plug. If you are interested in
-using this - please install Plug by following [the documentation here](vplg).
+This is part of my Vim configuration, which uses vim-plug. If you are interested in
+using this - please install vim-plug by following [the documentation here](vplg).
 
-After installing Vundle, you can jadd the following to your vimrc in order to
+After installing vim-plug, you can add the following to your vimrc in order to
 get started using my configuration:
 
     Plug 'monokrome/vim-user-configuration'
