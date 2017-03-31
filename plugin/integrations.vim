@@ -85,3 +85,6 @@ nmap <leader>Tf G2] Gi[Finishes #] pvT/yF#p:nohl
 
 " Go integrations!
 let g:go_snippet_engine = 'ultisnips'
+
+" Jump to Atom easily for pairing with others
+nnoremap <leader>gE :execute '!atom "' . getcwd() . '" "' . expand("%") . '"'<CR>
