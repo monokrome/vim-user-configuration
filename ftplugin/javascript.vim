@@ -11,6 +11,8 @@ nnoremap <buffer> <localleader>rr :TernRename<CR>
 nnoremap <bufeer> <localleader>/r :TernRefs<CR>
 nnoremap <bufeer> <localleader>/t :TernType<CR>
 
+let g:syntastic_javascript_checkers = ['eslint']
+
 " Code folding
 syntax region foldBraces start=/{/ end=/}/ transparent fold keepend extend
 setlocal foldmethod=syntax
