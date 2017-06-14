@@ -64,3 +64,12 @@ augroup END
 
 " Don't require JSX entension for JSX syntax highlighting
 let g:jsx_ext_required = 0
+
+" Neomake
+autocmd! BufWritePost * Neomake
+
+" Neoformat
+augroup fmt
+  autocmd!
+  autocmd BufWritePre * Neoformat
+augroup END

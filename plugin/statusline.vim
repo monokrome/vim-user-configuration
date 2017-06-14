@@ -84,19 +84,14 @@ let g:lightline = {
   \      'fileencoding': 'FileEncodingStatus',
   \      'mode': 'ModeStatus'
   \    },
-  \    'component_expand': {
-  \      'syntastic': 'SyntasticStatuslineFlag'
-  \    },
-  \    'component_type': {
-  \      'syntastic': 'error',
-  \    },
+  \    'component_expand': {},
+  \    'component_type': {},
   \    'active': {
   \      'left': [
   \        ['mode', 'paste'],
   \        ['fugitive', 'filename']
   \      ],
   \      'right': [
-  \        ['syntastic', 'lineinfo'],
   \        ['percent'],
   \        ['fileformat', 'fileencoding', 'filetype']
   \      ]

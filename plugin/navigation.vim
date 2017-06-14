@@ -54,8 +54,7 @@ call unite#filters#sorter_default#use(['sorter_rank'])
 let g:unite_source_history_yank_enable = 1
 
 " File access
-nno <leader>nrf :Unite file_mru file_rec/async:! -start-insert<CR>
-nno <leader>nf :Unite file_rec file_rec/async:! -start-insert<CR>
+nno <leader>nf :CtrlP<CR>
 
 " Yank history
 nnoremap <leader>ny :Unite history/yank<CR>

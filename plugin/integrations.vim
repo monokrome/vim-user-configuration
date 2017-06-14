@@ -53,19 +53,6 @@ let g:gist_open_browser_after_post = 1
 let g:gist_show_privates = 1
 let g:gist_post_private = 1
 
-" Syntastic!
-let g:syntastic_always_populate_loc_list=1
-
-function! s:syntastic()
-  SyntasticCheck
-  call lightline#update()
-endfunction
-
-augroup AutoSyntastic
-  autocmd!
-  autocmd BufWritePost "*.c,*.cpp,*.cxx,*.py,*.js,*.coffee" call s:syntastic()
-augroup END
-
 " Allow per-project settings!
 function! s:apply_locals()
   let l:locals = findfile('Project.vim', '.;')
