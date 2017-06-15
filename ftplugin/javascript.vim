@@ -8,9 +8,12 @@ setlocal commentstring=//\ %s
 nnoremap <buffer> gd :TernDef<CR>
 nnoremap <buffer> K :TernDoc<CR>
 nnoremap <buffer> <localleader>rr :TernRename<CR>
-nnoremap <bufeer> <localleader>/r :TernRefs<CR>
-nnoremap <bufeer> <localleader>/t :TernType<CR>
+nnoremap <buffer> <localleader>/r :TernRefs<CR>
+nnoremap <buffer> <localleader>/t :TernType<CR>
 
 " Code folding
 syntax region foldBraces start=/{/ end=/}/ transparent fold keepend extend
 setlocal foldmethod=syntax
+
+" Set up prettier to use better flags
+autocmd FileType javascript set formatprg=prettier\ --stdin\ --parser\ flow\ --single-quote\ --trailing-comma\ all\ --no-semi
