@@ -48,6 +48,7 @@ if has('autocmd')
   autocmd CursorHold,BufWritePost,BufReadPost,BufLeave * if !$VIMSWAP && isdirectory(expand("<amatch>:h")) | let &swapfile = &modified | endif
   autocmd BufRead,BufNewFile *.muttrc,.muttrc,muttrc set filetype=muttrc
   autocmd BufRead,BufNewFile *.scons,SConstruct set filetype=python
+  autocmd! BufNewFile,BufRead *.vs,*.fs set ft=glsl
 endif
 
 
@@ -64,9 +65,6 @@ augroup END
 
 " Don't require JSX entension for JSX syntax highlighting
 let g:jsx_ext_required = 0
-
-" Neomake
-autocmd! BufWritePost * Neomake
 
 " Neoformat
 augroup fmt

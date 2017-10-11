@@ -15,5 +15,10 @@ nnoremap <buffer> <localleader>/t :TernType<CR>
 syntax region foldBraces start=/{/ end=/}/ transparent fold keepend extend
 setlocal foldmethod=syntax
 
-" Set up prettier to use better flags
-autocmd FileType javascript set formatprg=prettier\ --stdin\ --parser\ flow\ --single-quote\ --trailing-comma\ all\ --no-semi
+" Use prettier-eslint for Neoformat
+let g:neoformat_enabled_javascript=['prettier-eslint']
+
+" Add new filetypes to tern
+let g:tern#filetypes = ['jsx']
+let g:tern#command = ["tern"]
+let g:tern#arguments = ["--persistent"]

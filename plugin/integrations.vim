@@ -75,3 +75,6 @@ let g:go_snippet_engine = 'ultisnips'
 
 " Jump to Atom easily for pairing with others
 nnoremap <leader>gE :execute '!atom "' . getcwd() . '" "' . expand("%") . '"'<CR>
+
+" Ale
+let g:ale_sign_column_always = 1
