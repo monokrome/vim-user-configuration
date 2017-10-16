@@ -65,9 +65,3 @@ augroup END
 
 " Don't require JSX entension for JSX syntax highlighting
 let g:jsx_ext_required = 0
-
-" Neoformat
-augroup fmt
-  autocmd!
-  autocmd BufWritePre * Neoformat
-augroup END
