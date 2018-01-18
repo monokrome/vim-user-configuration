@@ -2,6 +2,10 @@
 nnoremap j gj
 nnoremap k gk
 
+" Use FZF for finding files
+nnoremap <leader>nf :FZF<CR>
+nnoremap C-p :FZF<CR>
+
 " Multi-cursor bindings
 let g:multi_cursor_use_default_mapping=0
 
@@ -41,20 +45,6 @@ set nonumber
 " Show me the jumplist
 noremap <leader>lj :jumps<CR>
 noremap <leader>lc :changes<CR>
-
-" Use fuzzy matching for fuzzy matching
-let g:unite_enable_start_insert = 1
-let g:unite_winheight = 10
-let g:unite_split_rule = 'botright'
-
-call unite#filters#matcher_default#use(['matcher_fuzzy'])
-call unite#filters#sorter_default#use(['sorter_rank'])
-
-" Let unite.vim follow yanks
-let g:unite_source_history_yank_enable = 1
-
-" File access
-nno <leader>nf :CtrlP<CR>
 
 " Yank history
 nnoremap <leader>ny :Unite history/yank<CR>
