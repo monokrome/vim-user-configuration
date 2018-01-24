@@ -12,3 +12,7 @@ noremap <buffer> ]] /^\(\%^\<bar>\n\n\s*\)\zs\S\<bar>^\zsclass<CR>:nohlsearch<CR
 " Go to definitions using vim-jedi
 noremap <buffer> gd :call jedi#goto_assignments()<CR>
 noremap <buffer> gD :call jedi#goto_definitions()<CR>
+
+" Ale
+let g:ale_fixers = {'python': ['yapf']}
+let g:ale_linters = {'python': ['flake8']}

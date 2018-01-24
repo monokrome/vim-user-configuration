@@ -77,4 +77,5 @@ let g:go_snippet_engine = 'ultisnips'
 nnoremap <leader>gE :execute '!atom "' . getcwd() . '" "' . expand("%") . '"'<CR>
 
 " Ale
+let g:ale_fix_on_save = 1
 let g:ale_sign_column_always = 1
