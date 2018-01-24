@@ -4,7 +4,7 @@ nnoremap k gk
 
 " Use FZF for finding files
 nnoremap <leader>nf :FZF<CR>
-nnoremap C-p :FZF<CR>
+nnoremap <C-p> :FZF<CR>
 
 " Multi-cursor bindings
 let g:multi_cursor_use_default_mapping=0
