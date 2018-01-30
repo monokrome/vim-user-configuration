@@ -9,5 +9,4 @@ noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
 noremap <leader>r :reg<CR>
 
 " Changed clipboard to use unnamed
-set clipboard=unnamed
-
+set clipboard=unnamed,unnamedplus
