@@ -1,7 +1,10 @@
-let deoplete#sources#jedi#show_docstring = 1
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#sources#jedi#show_docstring = 1
 
-let g:SuperTabDefaultCompletionType = "<c-p>"
-let g:SuperTabContextDefaultCompletionType = "<c-p>"
+" let g:python_host_prog = "/run/current-system/sw/bin/python"
+
+let g:SuperTabDefaultCompletionType = "<c-n>"
+let g:SuperTabContextDefaultCompletionType = "<c-n>"
 
 let g:UltiSnipsExpandTrigger="<c-e>"
 let g:UltiSnipsJumpBackwardTrigger="<c-p>"
