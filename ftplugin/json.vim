@@ -1,1 +1,1 @@
-let g:neoformat_enabled_json=[]
+let g:vim_json_syntax_conceal=0
