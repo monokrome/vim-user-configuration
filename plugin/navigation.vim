@@ -1,4 +1,4 @@
-" j/k make a lot more sense this way when lines are wrapped 
+" j/k make a lot more sense this way when lines are wrapped
 nnoremap j gj
 nnoremap k gk
 
