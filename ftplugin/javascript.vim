@@ -25,13 +25,13 @@ let g:tern#command = ["tern"]
 let g:tern#arguments = ["--persistent"]
 
 " Use prettier-eslint for linting and fixing code
-let g:ale_completion_enabled = 1
-let g:ale_fix_on_save = 1
+let g:ale_javascript_prettier_use_local_config = 1
 
-let g:ale_fixers = {
-\   'javascript': ['prettier_eslint']
+let s:ale_plugins = {
+\   'javascript': [
+\     'prettier_eslint'
+\   ],
 \ }
 
-let g:ale_linters = {
-\   'javascript': ['prettier_eslint']
-\ }
+let b:ale_fixers = s:ale_plugins
+let b:ale_linters = s:ale_plugins
