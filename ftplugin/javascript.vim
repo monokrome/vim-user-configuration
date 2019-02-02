@@ -29,7 +29,9 @@ let g:ale_javascript_prettier_use_local_config = 1
 
 let s:ale_plugins = {
 \   'javascript': [
-\     'prettier_eslint'
+\     'prettier',
+\     'eslint',
+\     'prettier-eslint',
 \   ],
 \ }
 
