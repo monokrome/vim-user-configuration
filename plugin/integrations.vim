@@ -87,3 +87,6 @@ let g:ale_fixers = {
 \     'trim_whitespace',
 \   ],
 \ }
+
+" Go
+let g:go_version_warning = 0  " stfu
