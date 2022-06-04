@@ -90,3 +90,6 @@ let g:ale_fixers = {
 
 " Go
 let g:go_version_warning = 0  " stfu
+
+" Deno
+let g:markdown_fenced_languages = ["ts=typescript"]
