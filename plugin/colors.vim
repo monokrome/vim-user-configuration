@@ -1,7 +1,10 @@
 syntax on
 
+" Allow vim to use 24-bit colorschemes
+set termguicolors
+
 " Nord color scheme
-colorscheme spacegray
+colorscheme solarized
 
 " Cursor
 hi CursorLine ctermfg=NONE ctermbg=NONE cterm=bold
