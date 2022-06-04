@@ -1,7 +1,7 @@
 syntax on
 
 " Nord color scheme
-colorscheme nord
+colorscheme spacegray
 
 " Cursor
 hi CursorLine ctermfg=NONE ctermbg=NONE cterm=bold
