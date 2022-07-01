@@ -1,14 +1,14 @@
 " Fugitive! :D :D :D
-noremap <leader>ss :Gstat<CR>
-noremap <leader>sc :Gcommit<CR>
-noremap <leader>sb :Gblame<CR>
-noremap <leader>se :Gedit<CR>
-noremap <leader>sw :Gwrite<CR>
-noremap <leader>sB :Gbrowse<CR>
+noremap <leader>sB :GBrowse<CR>
+noremap <leader>sb :Git blame<CR>
+noremap <leader>sc :Git commit<CR>
 noremap <leader>sd :Gdiff<CR>
-noremap <leader>sp :Git push<CR>
-noremap <leader>su :Git pull<CR>
+noremap <leader>se :Gedit<CR>
 noremap <leader>sf :Git fetch<CR>
+noremap <leader>sp :Git push<CR>
+noremap <leader>ss :Git stat<CR>
+noremap <leader>su :Git pull<CR>
+noremap <leader>sw :Gwrite<CR>
 
 " Signify
 let g:signify_disable_by_default = 1
