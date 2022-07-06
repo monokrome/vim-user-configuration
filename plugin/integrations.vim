@@ -6,7 +6,7 @@ noremap <leader>sd :Gdiff<CR>
 noremap <leader>se :Gedit<CR>
 noremap <leader>sf :Git fetch<CR>
 noremap <leader>sp :Git push<CR>
-noremap <leader>ss :Git stat<CR>
+noremap <leader>ss :Git<CR>
 noremap <leader>su :Git pull<CR>
 noremap <leader>sw :Gwrite<CR>
 
