@@ -21,3 +21,7 @@ hi VertSplit ctermbg=NONE ctermfg=NONE guifg=NONE guibg=NONE
 " Highlight long lines
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%80v.\+/
+
+" coc.nvim specific colors
+:highlight CocFloating ctermbg=Red guibg=#ff9900
+highlight CocErrorFloat ctermfg=White guifg=#ffffff
