@@ -23,5 +23,5 @@ highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%80v.\+/
 
 " coc.nvim specific colors
-:highlight CocFloating ctermbg=Red guibg=#ff9900
-highlight CocErrorFloat ctermfg=White guifg=#ffffff
+:highlight CocFloating ctermbg=White guibg=#ffffff
+highlight CocErrorFloat ctermfg=Black guifg=#000000
