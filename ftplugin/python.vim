@@ -1,4 +1,5 @@
 setlocal softtabstop=4
+setlocal shiftwidth=4
 setlocal tabstop=4
 setlocal expandtab
 
@@ -9,10 +10,6 @@ setlocal commentstring=#\ %s
 noremap <buffer> [[ ?^\(\%^\<bar>\n\n\s*\)\zs\S\<bar>^\zsclass<CR>:nohlsearch<CR>
 noremap <buffer> ]] /^\(\%^\<bar>\n\n\s*\)\zs\S\<bar>^\zsclass<CR>:nohlsearch<CR>
 
-" Go to definitions using vim-jedi
-noremap <buffer> gd :call jedi#goto_assignments()<CR>
-noremap <buffer> gD :call jedi#goto_definitions()<CR>
-
-" Ale
-let g:ale_fixers = {'python': ['yapf']}
-let g:ale_linters = {'python': ['flake8']}
+" Ale (buffer-local settings)
+let b:ale_fixers = ['yapf']
+let b:ale_linters = ['flake8']

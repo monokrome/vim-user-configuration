@@ -3,7 +3,6 @@ syntax on
 " Allow vim to use 24-bit colorschemes
 set termguicolors
 
-" Nord color scheme
 colorscheme solarized
 
 " Cursor
@@ -21,7 +20,3 @@ hi VertSplit ctermbg=NONE ctermfg=NONE guifg=NONE guibg=NONE
 " Highlight long lines
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%80v.\+/
-
-" coc.nvim specific colors
-:highlight CocFloating ctermbg=White guibg=#ffffff
-highlight CocErrorFloat ctermfg=Black guifg=#000000

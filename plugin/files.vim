@@ -1,6 +1,3 @@
-" Use syntax-specific folding
-set foldmethod=syntax
-
 " Use tree-style directory listings
 let g:netrw_liststyle=3
 

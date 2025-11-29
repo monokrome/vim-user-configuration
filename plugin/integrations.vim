@@ -22,10 +22,11 @@ let g:signify_sign_change            = '~'
 let g:signify_sign_delete            = '_'
 let g:signify_sign_delete_first_line = '‾'
 
-let g:signify_mapping_toggle = '<leader>sg'
-let g:signify_mapping_toggle_highlight = '<leader>sG'
-let g:signify_mapping_next_hunk = '<leader>sj'
-let g:signify_mapping_prev_hunk = '<leader>sk'
+" Signify mappings (modern format)
+nmap <leader>sg <plug>(signify-toggle)
+nmap <leader>sG <plug>(signify-toggle-highlight)
+nmap <leader>sj <plug>(signify-next-hunk)
+nmap <leader>sk <plug>(signify-prev-hunk)
 
 " Makeshift! :D
 let s:build_path = finddir('.build', '.', 1)
@@ -47,7 +48,7 @@ noremap <leader>b :PlugInstall<CR>
 noremap <leader>B :PlugInstall!<CR>
 
 " Gist!
-let g:gist_clip_comman = 'pbcopy'
+let g:gist_clip_command = 'pbcopy'
 let g:gist_detect_filetype = 1
 let g:gist_open_browser_after_post = 1
 let g:gist_show_privates = 1
@@ -76,8 +77,8 @@ let g:go_snippet_engine = 'ultisnips'
 " Jump to Atom easily for pairing with others
 nnoremap <leader>gE :execute '!atom "' . getcwd() . '" "' . expand("%") . '"'<CR>
 
-" Ale
-let g:ale_completion_enabled = 1
+" Ale (completion disabled - using nvim-cmp instead)
+let g:ale_completion_enabled = 0
 let g:ale_fix_on_save = 1
 let g:ale_sign_column_always = 1
 
